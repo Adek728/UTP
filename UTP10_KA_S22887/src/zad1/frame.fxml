@@ -1,0 +1,30 @@
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="zad1.Controller">
+    <top>
+        <VBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="STOP" mnemonicParsing="false" onAction="#stop" prefHeight="30.0" prefWidth="100000.0" text="Stop" />
+                <Button fx:id="nowy" mnemonicParsing="false" onAction="#addThread" prefHeight="30.0" prefWidth="1000000.0"  text="Add new thread" />
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <content>
+                <Text fx:id="wyswietlenie"/>
+            </content>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <HBox fx:id="okno" prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
